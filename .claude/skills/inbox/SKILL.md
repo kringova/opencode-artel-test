@@ -14,7 +14,7 @@ user_invocable: true
 
 ## Контракт (выжимка из backlog)
 
-Задача → `projects/<slug>/tasks/<имя>.md`. Frontmatter: `id` (максимальный по vault + 1), `project: "[[slug/slug]]"`, `status: todo`, `tags: [task]` (+`bug` для багов), `created`/`updated` = сегодня, `est_days`, `rice_reach` (1–10), `rice_impact` (1–5), `rice_confidence` (50–100), `rice_effort` (= est_days/5, min 0.1), `summary`. Разделы тела: Что нужно сделать · Почему важно · Критерии готовности (DoD, наблюдаемый результат) · Пререквизиты · Пошаговый план · Вопросы (в файл, не в чат) · Заметки. Содержимое — на русском.
+Задача → `projects/<slug>/tasks/<имя>.md`. Frontmatter: `id` (максимальный по vault + 1), `project: "[[slug/slug]]"`, `status: todo`, `tags: [task]` (+`bug` для багов), `created`/`updated` = сегодня, `est_days`, `rice_reach` (1–10), `rice_impact` (1–5), `rice_confidence` (50–100), `rice_effort` (= est_days/5, min 0.1), `summary`. Разделы тела: Что нужно сделать · Почему важно · Критерии готовности (DoD, наблюдаемый результат) · Пререквизиты · Вопросы (в файл, не в чат) · Заметки (сюда же план реализации, если нужен). DoD-чеклист = прогресс. Содержимое — на русском.
 
 Формат записи инбокса (`_inbox/<любое-имя>.md`):
 
