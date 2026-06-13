@@ -4,7 +4,9 @@ project: "[[]]"
 status: todo
 tags: [task]
 created: {{date}}
+created_at: {{datetime}}
 updated: {{date}}
+closed_at:
 sp: 3
 rice_reach: 1
 rice_impact: 3
