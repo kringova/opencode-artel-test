@@ -5,11 +5,11 @@ status: todo
 tags: [task]
 created: {{date}}
 updated: {{date}}
-est_days: 1
+sp: 3
 rice_reach: 1
 rice_impact: 3
 rice_confidence: 80
-rice_effort: 0.2
+rice_effort: 0.6
 summary: ""
 roles: [reviewer]
 model_tier: middle

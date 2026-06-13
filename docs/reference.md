@@ -42,19 +42,22 @@ status: todo                # todo | doing | done | blocked | cancelled
 tags: [task]                # + bug для багов/инцидентов
 created: 2026-06-12
 updated: 2026-06-12         # обновлять при каждом изменении
-est_days: 1                 # идеальные дни (1 ≈ 6 фокус-часов)
+sp: 3                       # Story Points — размер (Фибоначчи 1/2/3/5/8/13), не время
 rice_reach: 5               # 1–10
 rice_impact: 3              # 1–5
 rice_confidence: 80         # 50–100
-rice_effort: 0.2            # est_days / 5, минимум 0.1
+rice_effort: 0.6            # sp / 5, минимум 0.1
 summary: "Одна строка для индексов"
 roles: [reviewer, techwriter]  # опц.: роли, выведенные из RICE-порогов (см. roles.md)
+model_tier: middle          # грейд модели по природе задачи (см. methodology.md)
 ---
 ```
 
 Разделы тела: «Что нужно сделать», «Почему важно», «Критерии готовности (DoD)», «Пререквизиты», «Вопросы», «Заметки». Семантика каждого — в [methodology.md](methodology.md).
 
 Поле `roles` — какие роли Артели включаются на задаче; выводится из компонентов RICE (пороги — в [roles.md](roles.md) и [workflow.md](workflow.md)).
+
+Поле `sp` — размер задачи в Story Points (Фибоначчи), первичная оценка вместо времени; `rice_effort = sp/5`. Поле `model_tier` — грейд модели по природе задачи. Оба — в [methodology.md](methodology.md). Старые задачи могут иметь `est_days` вместо `sp` (переходный период).
 
 ## Frontmatter проекта
 

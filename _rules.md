@@ -36,8 +36,8 @@ tags: [meta]
 
 - Создавать из `_templates/task.md`; имя файла — короткое, snake-case/kebab-case, на английском
 - **`id` — сквозной номер тикета**: максимальный `id` среди всех `projects/*/tasks/*.md` + 1. Не переиспользовать и не пропускать
-- **Оценка времени**: `est_days` в идеальных днях (1 день ≈ 6 фокус-часов); большинство задач 0.5–3
-- **RICE**: `rice_reach` (1–10), `rice_impact` (1–5), `rice_confidence` (50–100), `rice_effort` = `est_days / 5` (чел-недели, min 0.1). RICE = (reach × impact × confidence%) / effort
+- **Оценка размера**: `sp` — Story Points (Фибоначчи 1/2/3/5/8/13), не время (у ИИ валюта — токены); `sp ≥ 8` → декомпозировать. Старые задачи с `est_days` не трогаются (переходный период)
+- **RICE**: `rice_reach` (1–10), `rice_impact` (1–5), `rice_confidence` (50–100), `rice_effort` = `sp / 5` (min 0.1). RICE = (reach × impact × confidence%) / effort
 - Статусы: `todo → doing → done`; ещё `blocked` и `cancelled`
 - Для багов/инцидентов тег `bug`: `tags: [task, bug]`
 - Разделы:
