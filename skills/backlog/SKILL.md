@@ -26,11 +26,11 @@ status: todo
 tags: [task]                 # + bug для багов/инцидентов: [task, bug]
 created: <сегодня YYYY-MM-DD>
 updated: <сегодня YYYY-MM-DD>
-est_days: <число>            # оценка в идеальных днях (1 день ≈ 6 фокус-часов)
+sp: <1|2|3|5|8|13>           # Story Points — размер задачи (Фибоначчи), см. «Story Points»
 rice_reach: <1–10>
 rice_impact: <1–5>
 rice_confidence: <50–100>
-rice_effort: <est_days / 5, минимум 0.1>
+rice_effort: <sp / 5, минимум 0.1>
 summary: "<одна строка для индексов и дашборда>"
 roles: [<выведи из RICE — см. «Роли»>]
 model_tier: <junior|middle|senior — выведи по природе задачи, см. «Грейд модели»>

@@ -46,9 +46,11 @@ npm run dashboard      # http://localhost:4321
 - [Стайлгайд](docs/styleguide.md) — APC, против ИИ-воды, формат под агента
 
 **Справка**
+- [Архитектура](docs/architecture.md) — из чего собран шаблон, роль каждой папки
 - [Навыки](docs/skills.md) — sync / backlog / close / recap / inbox, как добавить свой
 - [Справочник полей](docs/reference.md) — структура и все поля frontmatter
 - [FAQ](docs/faq.md)
+- [Changelog](CHANGELOG.md) — изменения методологии
 
 **Инструменты**
 - [Дашборд](dashboard/README.md) — локальная веб-витрина
