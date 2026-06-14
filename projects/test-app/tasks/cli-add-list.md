@@ -1,12 +1,12 @@
 ---
 id: 2
 project: "[[test-app/test-app]]"
-status: review
+status: done
 tags: [task]
 created: 2026-06-14
 created_at: 2026-06-14T00:00:00
 updated: 2026-06-14
-closed_at:
+closed_at: 2026-06-14T18:50:15.769Z
 sp: 3
 rice_reach: 8
 rice_impact: 4
