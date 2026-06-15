@@ -11,11 +11,20 @@ _dashboard.md        Dataview-сводка: проекты, беклог по RI
 _templates/
   task.md            шаблон задачи
   project.md         шаблон карточки проекта
+  docs/              шаблоны документов проекта
+    brief.md         бриф (RFC): замысел, метрики, фазы — до старта
+    architecture.md  архитектура (стек, модули, потоки)
+    decisions.md     журнал решений (ADR-lite)
+    scenarios.md     сценарии использования → smoke
+    README.md · AGENTS.md · CHANGELOG.md
 _inbox/              сырые записи «на разбор», по файлу на запись
 projects/
   <slug>/
     <slug>.md        карточка проекта
+    brief.md         бриф (RFC) — на старте проекта
     roadmap.md       фазы с чекбоксами
+    decisions.md     журнал решений (active+)
+    scenarios.md     сценарии использования → smoke (active+)
     tasks/
       tasks.md       Dataview-индекс задач проекта
       <имя>.md       задачи
@@ -76,6 +85,7 @@ type: product               # свободная типизация: product, to
 priority: medium            # high | medium | low
 tags: [project]
 audience: "кто пользуется"
+jtbd: "когда я …, хочу …, чтобы …"   # Purpose аудитории одной строкой
 repo: "https://github.com/..."
 local: "/path/to/code"
 updated: 2026-06-12

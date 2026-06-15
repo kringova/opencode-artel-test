@@ -387,10 +387,6 @@ function analyticsPage({ projects, tasks }) {
   const openTasks = allTasks.filter(isOpen);
   const reviewTasks = allTasks.filter((t) => t.status === "review");
 
-  // --- Сводка ---
-  const totalProjects = projects.length;
-  const totalOpen = openTasks.length;
-  const totalDoing = allTasks.filter((t) => t.status === "doing").length;
   const totalDone = doneTasks.length;
 
   // --- Распределение грейдов по всем задачам (плановый, по model_tier) ---
@@ -541,17 +537,6 @@ function analyticsPage({ projects, tasks }) {
 
   return `
   <div class="an-grid">
-
-    <div class="an-card">
-      <div class="an-card-title">Сводка</div>
-      <div class="an-stats-row">
-        <div class="an-stat"><span class="an-stat-num">${totalProjects}</span><span class="an-stat-lbl">проектов</span></div>
-        <div class="an-stat"><span class="an-stat-num">${totalOpen}</span><span class="an-stat-lbl">открытых</span></div>
-        <div class="an-stat"><span class="an-stat-num">${totalDoing}</span><span class="an-stat-lbl">в работе</span></div>
-        <div class="an-stat"><span class="an-stat-num">${reviewTasks.length}</span><span class="an-stat-lbl">на ревью</span></div>
-        <div class="an-stat"><span class="an-stat-num">${totalDone}</span><span class="an-stat-lbl">готово</span></div>
-      </div>
-    </div>
 
     <div class="an-card">
       <div class="an-card-title">Плановые грейды (по сложности тикетов)</div>
